@@ -1,0 +1,50 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px;
+
+  padding: 20px;
+  width: 100%;
+  max-height: 400px;
+  min-width: 100px;
+  background-color: white;
+  z-index: 1;
+}
+.product:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.product__rating {
+  display: flex;
+  color: #ffb600;
+  font-weight: bolder;
+}
+
+.product > img {
+  max-height: 115px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product > button {
+  background: #f0c14b;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+}
+
+.product__price {
+  margin-top: 1px;
+}
+
+.product__info {
+  height: 105px;
+  margin-bottom: 40px;
+  /* I added the z-index here to display the ratings on top of the image  */
+  z-index: 1;
+}
